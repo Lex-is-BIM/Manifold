@@ -1,0 +1,230 @@
+{
+    "metadata": {
+        "defaultName": "Коллектор распределительный на два выхода",
+        "description": "Коллектор распределительный на два выхода",
+        "version": "0.0.1",
+        "author": "Эпов А.Г."
+    },
+    "styleParameters": [
+        {
+            "name": "General",
+            "text": "Общие",
+            "params": [
+                {
+                    "name": "Material",
+                    "text": "Материал",
+                    "type": "Id",
+                    "entityTypeId": "0abcb18f-0aaf-4509-bf89-5c5fad9d5d8b"
+                }
+            ]
+        },
+        {
+            "name": "Dimensions",
+            "text": "Размеры",
+            "params": [
+                {
+                    "name": "CollectorDiameter",
+                    "text": "Диаметр коллектора",
+                    "type": "UserEnum",
+                    "default": "D0_75",
+                    "items": [
+                        {
+                            "key": "D0_75",
+                            "text": "3/4\""
+                        },
+                        {
+                            "key": "D1_0",
+                            "text": "1\""
+                        },
+                        {
+                            "key": "D1_25",
+                            "text": "1 1/4\""
+                        },
+                        {
+                            "key": "D1_50",
+                            "text": "1 1/2\""
+                        } 
+                    ]
+                },
+                {
+                    "name": "OutletsDiameter",
+                    "text": "Диаметр выходов",
+                    "type": "UserEnum",
+                    "default": "D0_75",
+                    "items": [
+                        {
+                            "key": "D0_50",
+                            "text": "1/2\""
+                        },
+                        {
+                            "key": "D0_75",
+                            "text": "3/4\""
+                        },
+                        {
+                            "key": "D1_0",
+                            "text": "1\""
+                        }   
+                    ]
+                },
+                {
+                    "name": "DistanceEdge",
+                    "text": "Расстояние от отвода до края",
+                    "type": "Length",
+                    "default": "24.5",
+                    "min": "24.5",
+                    "max": "200"
+                },
+                {
+                    "name": "DistanceOutput",
+                    "text": "Расстояния между отводами",
+                    "type": "Length",
+                    "default": "40",
+                    "min": "24.5",
+                    "max": "200"
+                } 
+            ]
+        },
+        {
+            "name": "Execution",
+            "text": "Исполнение",
+            "params": [
+                {
+                    "name": "Stock",
+                    "text": "Шток",
+                    "type": "UserEnum",
+                    "default": "0",
+                    "items": [
+                        {
+                            "key": "0",
+                            "text": "Вертикальный"
+                        },
+                        {
+                            "key": "1",
+                            "text": "Наклонный"
+                        }
+                        
+                    ]
+                },
+                {
+                    "name": "Valves",
+                    "text": "Клапаны",
+                    "type": "UserEnum",
+                    "default": "V0",
+                    "items": [
+                        {
+                            "key": "V0",
+                            "text": "Нет"
+                        },
+                        {
+                            "key": "V1",
+                            "text": "Настроечный"
+                        },
+                        {
+                            "key": "V2",
+                            "text": "Настроечный с расходомером"
+                        },
+                        {
+                            "key": "V3",
+                            "text": "Термостатический"
+                        }
+                    ]
+                }
+            ]
+        }
+    
+    ],
+    "ports": [
+        {
+            "name": "CollectorInlet",
+            "text": "Вход коллектора",
+            "flowDirection": "Inlet",
+            "systemCategories": [
+                "DomesticColdWater",
+                "DomesticHotWater",
+                "Heating",
+                "IndustrialColdWater",
+                "IndustrialHotWater",
+                "Firewater",
+                "OtherPipeSystem"       
+            ]
+        },
+        {
+            "name": "Outlet1",
+            "text": "Ответвление1",
+            "flowDirection": "Outlet",
+            "systemCategories": [
+                "DomesticColdWater",
+                "DomesticHotWater",
+                "Heating",
+                "IndustrialColdWater",
+                "IndustrialHotWater",
+                "OtherPipeSystem"
+            ]
+        },
+        {
+            "name": "Outlet2",
+            "text": "Ответвление2",
+            "flowDirection": "Outlet",
+            "systemCategories": [
+                "DomesticColdWater",
+                "DomesticHotWater",
+                "Heating",
+                "IndustrialColdWater",
+                "IndustrialHotWater",
+                "OtherPipeSystem"
+            ]
+        },
+        {
+            "name": "Outlet3",
+            "text": "Ответвление3",
+            "flowDirection": "Outlet",
+            "systemCategories": [
+                "DomesticColdWater",
+                "DomesticHotWater",
+                "Heating",
+                "IndustrialColdWater",
+                "IndustrialHotWater",
+                "OtherPipeSystem"
+            ]
+        },
+        {
+            "name": "Outlet4",
+            "text": "Ответвление4",
+            "flowDirection": "Outlet",
+            "systemCategories": [
+                "DomesticColdWater",
+                "DomesticHotWater",
+                "Heating",
+                "IndustrialColdWater",
+                "IndustrialHotWater",
+                "OtherPipeSystem"
+            ]
+        },
+        {
+            "name": "Outlet5",
+            "text": "Ответвление5",
+            "flowDirection": "Outlet",
+            "systemCategories": [
+                "DomesticColdWater",
+                "DomesticHotWater",
+                "Heating",
+                "IndustrialColdWater",
+                "IndustrialHotWater",
+                "OtherPipeSystem"
+            ]
+        },
+        {
+            "name": "CollectorOutlet",
+            "text": "Выход коллектора",
+            "flowDirection": "Inlet",
+            "systemCategories": [
+                "DomesticColdWater",
+                "DomesticHotWater",
+                "Heating",
+                "IndustrialColdWater",
+                "IndustrialHotWater",
+                "OtherPipeSystem"
+            ]
+        }
+    ]
+}
